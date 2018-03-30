@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.wetoop.storeoperator"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.google.zxing:core:3.3.0'
+    implementation 'com.tapadoo.android:alerter:2.0.4'
+    compile 'net.steamcrafted:load-toast:1.0.12'
+}

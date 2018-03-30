@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+            <ImageView
+                android:id="@+id/addImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/add"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:singleLine="true"
+                android:maxEms="8"
+                android:visibility="visible"
+                android:textColor="@color/used_color"
+                android:text="姓名"
+                android:textSize="16dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_toRightOf="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="测试测试"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

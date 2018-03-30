@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/searchR"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/textSearch"
+                    android:padding="6dp"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/search" />
+
+                <TextView
+                    android:id="@+id/textSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="搜索已付款订单"
+                    android:textColor="@color/pay_used"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchVis"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:background="@color/white"
+                android:hint="搜索已付款订单"
+                android:imeOptions="actionSearch"
+                android:maxEms="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="34dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/light_grey"
+                android:textColorHint="@color/pay_used"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="6dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/search" />
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="取消"
+                android:textColor="@color/order_blue"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <ImageView
+                android:id="@+id/clear_button"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/cancel_button"
+                android:padding="8dp"
+                android:src="@mipmap/fork_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--<View
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/pay_used"/>-->
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray">
+
+        <!--<android.support.v4.view.ViewPager-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tabHost" />
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0" />
+
+                <FrameLayout
+                    android:id="@+id/tab_content_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/abc_item_background_holo_light" />
+
+            </LinearLayout>
+        </TabHost>
+
+    </RelativeLayout>
+</LinearLayout>

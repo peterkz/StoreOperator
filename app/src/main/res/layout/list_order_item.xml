@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/line_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/order_item_icon" />
+
+        <TextView
+            android:id="@+id/text_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/item_icon"
+            android:text="20180115786451212"
+            android:textColor="#494949"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="已使用"
+            android:typeface="sans"
+            android:textColor="#9b9b9b"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="12dp"
+        android:background="#9b9b9b" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:maxLines="1"
+        android:text="商品名称："
+        android:typeface="sans"
+        android:textColor="#494949"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:text="顾        客："
+        android:typeface="sans"
+        android:textColor="#494949"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_created"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:text="付款时间："
+        android:typeface="sans"
+        android:textColor="#494949"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:text="消费金额："
+        android:textColor="#494949"
+        android:typeface="sans"
+        android:textSize="15sp" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_favorites"
+        icon="@mipmap/order_gray"
+        title="订单" />
+    <tab
+        id="@+id/tab_nearby"
+        icon="@mipmap/verify_gray"
+        title="核销" />
+    <tab
+        id="@+id/tab_friends"
+        icon="@mipmap/account_gray"
+        title="帐户" />
+</tabs>

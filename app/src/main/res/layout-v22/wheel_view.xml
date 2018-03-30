@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datepicker"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <com.wetoop.storeoperator.ui.widget.WheelView
+                    android:id="@+id/wheel_view_wv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="时" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <com.wetoop.storeoperator.ui.widget.WheelView
+                    android:id="@+id/wheel_view_wv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="分" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#2196f3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/view"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="取  消" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/sure_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#2196f3"
+                android:text="确  定"
+                android:textColor="#ffffff"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

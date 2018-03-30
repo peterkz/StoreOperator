@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">微查单</string>
+
+    <string name="order_no">订单号</string>
+    <string name="created">下单时间：</string>
+    <string name="purchased">付款时间：</string>
+    <string name="used">使用时间：</string>
+    <string name="cancelled">取消时间</string>
+    <string name="funds_pay">其中预存</string>
+    <string name="mobile">顾客：</string>
+    <string name="address">地址</string>
+    <string name="title_activity_printer">打印</string>
+    <string name="no_bluetooth">设备不支持蓝牙连接</string>
+    <string name="bluetooth_error">蓝牙连接错误</string>
+    <string name="status_created">等待付款</string>
+    <string name="status_used">已使用</string>
+    <string name="status_purchased">已付款</string>
+    <string name="status_cancelled">已取消</string>
+    <string name="status_refund">已退款</string>
+    <string name="action_scan">扫描验证</string>
+    <string name="title_activity_scanner">对准订单二维码扫描</string>
+    <string name="search_order">搜索订单号/码号</string>
+    <string name="qr_error">不是订单二维码</string>
+    <string name="qr_network_error">联网检查出错</string>
+    <string name="qr_order_error">订单二维码无效</string>
+    <string name="print_order_error">订单无效</string>
+    <string name="bluetooth_connection_lost">蓝牙连接已断开</string>
+    <string name="allow_price_scope">请输入0.01到100000之间的数字</string>
+    <string name="login_button">登录</string>
+    <string name="login_prompt_user">请输入用户名</string>
+    <string name="login_prompt_password">请输入密码</string>
+    <string name="login_failure">登录失效，请重新登录</string>
+    <string name="login_no_user">已无可用于登录的帐户</string>
+    <string name="login_succeed">登录完成</string>
+    <string name="login_out_time">登录过期，是否重新登录</string>
+</resources>

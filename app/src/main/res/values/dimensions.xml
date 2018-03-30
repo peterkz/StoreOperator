@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bb_height">50dp</dimen>
+    <dimen name="bb_default_elevation">2dp</dimen>
+    <dimen name="bb_fake_shadow_height">2dp</dimen>
+</resources>

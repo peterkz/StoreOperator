@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/simple_tab_nearby"
+        icon="@mipmap/verify_gray"
+        title="核销" />
+    <tab
+        id="@+id/simple_tab_friends"
+        icon="@mipmap/account_gray"
+        title="帐户" />
+</tabs>

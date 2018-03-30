@@ -1,0 +1,37 @@
+<resources>
+
+    <color name="title_color">#2196f3</color>
+    <color name="title_clicked_color">#3175d4</color>
+    <color name="action_bar_color">#ffffff</color>
+    <color name="action_bar_color_status">#D1D1D1</color>
+    <color name="action_bar_color_text">#666666</color>
+    <color name="grey">#D1D1D1</color>
+    <color name="pay_color0">#d6ab01</color>
+    <color name="pay_color">#669900</color>
+    <color name="pay_clicked">#476901</color>
+    <color name="pay_wait_color">#EAC14E</color>
+    <color name="pay_cancel_color">#ffee5c42</color>
+    <color name="pay_used">#cccccc</color>
+    <color name="bb_inActiveBottomBarItemColor">#747474</color>
+    <color name="login_color">#00B3EF</color>
+    <color name="login_t_color">#989898</color>
+    <color name="order_black">#494949</color>
+    <color name="order_blue">#00b4f0</color>
+    <color name="white">#ffffff</color>
+    <color name="light_grey">#8E8E8E</color>
+    <color name="line_gray">#F8F8F8</color>
+    <color name="used_color">#9b9b9b</color>
+    <color name="red">#F95C63</color>
+    <color name="verify_blue">#00A6DE</color>
+    <color name="verify_stat">#EDF7FA</color>
+    <color name="search_num">#00b4f0</color>
+    <color name="search_letter">#494949</color>
+    <color name="status_purchased">#59BE46</color>
+    <color name="status_wait">#EAC14E</color>
+    <color name="status_cancelled">#fb4c5c</color>
+    <color name="status_used">#9b9b9b</color>
+    <color name="status_refund">#fb4c5c</color>
+    <color name="alerter_confirm">#FF8800</color>
+    <color name="alerter_info">#669900</color>
+    <color name="alerter_alert">#CC0000</color>
+</resources>

@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/title_color</item>
+        <item name="colorPrimaryDark">@color/title_clicked_color</item>
+        <item name="colorAccent">@color/action_bar_color</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionMenuTextColor">@color/action_bar_color_status</item>
+    </style>
+
+    <style name="AppTheme.TransNav" parent="AppTheme" />
+
+    <style name="CustomTitleTextAppearance">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LoadingDialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="BB_BottomBarBadge_Text" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BB_BottomBarItem">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">wrap_content</item>
+        <!-- layout_height is ignored since the height is set programmatically in BottomBar
+        .updateItems() -->
+        <item name="android:layout_height">@dimen/bb_height</item>
+    </style>
+
+    <style name="BB_BottomBarItem_TitleStyle">
+        <!-- Material spec: "Avoid long text labels as these labels do not truncate or wrap." -->
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="BB_BottomBarItem_Fixed.TitleAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BB_BottomBarItem_Shifting.TitleAppearance" parent="BB_BottomBarItem_Fixed.TitleAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BB_BottomBarItem_Tablet">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/inuptodown</item>
+        <item name="android:windowExitAnimation">@anim/outdowntoup</item>
+    </style>
+
+    <style name="SplashDialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <style name="EditTextStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/light_grey</item>
+        <item name="colorControlActivated">@color/light_grey</item>
+    </style>
+</resources>
